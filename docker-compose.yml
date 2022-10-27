@@ -1,0 +1,17 @@
+version: '3.7'
+
+volumes:
+  data:
+  
+services:
+  angular:
+    image: 27b7829b8b88fc325abc80486cda36ae5b39f4fb40663eafcc533b91fcca8b50
+    hostname: angular
+    tty: true
+    restart: always
+    ports:
+      - 80:80
+    environment:
+      - TZ=America/Sao_Paulo
+    volumes:
+      - C:/Users/Hugo/Desktop/Codigos/Frontend/Angular/ProjetoAngularTreinamento/dist/treinamento-ugo:/usr/share/nginx/html/:rw

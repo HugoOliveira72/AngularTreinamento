@@ -1,0 +1,15 @@
+<mat-form-field *ngIf="!model.sexo">
+    <mat-label>{{model.title}}</mat-label>
+    <input  matInput [placeholder]="model.placeHolder" value="" [(ngModel)]="model.value" >
+</mat-form-field>
+
+<mat-form-field *ngIf="model.sexo">
+    <mat-label >{{model.title}}</mat-label>
+    <mat-select>
+        <mat-option value="female">F</mat-option>
+        <mat-option value="male">M</mat-option>
+    </mat-select>
+</mat-form-field>
+
+
+

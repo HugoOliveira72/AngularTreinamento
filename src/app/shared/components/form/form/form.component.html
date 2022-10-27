@@ -1,0 +1,6 @@
+<div id="everaldo">
+    <h2>Forms</h2>
+    <div id="input-div" *ngFor="let row of model.rows">
+        <app-input *ngFor="let col of row.cols" [model]="col.input"></app-input>
+    </div>
+</div>

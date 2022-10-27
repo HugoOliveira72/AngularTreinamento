@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(194, 16, 194);
+}
+
+mat-toolbar{
+    justify-content: right;
+    
+}
+
+span{
+    margin-left: 1%;
+    margin-right: 2%;
+}
